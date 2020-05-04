@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.99">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
-  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+<Document xmlns:p="property" Id="PpprCj44fm7N8sKxGsvZb3" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.VLML.Demo.Util" CanvasType="FullCategory">
       <!--
@@ -92,15 +91,6 @@
                       <Pin Id="ACxAW5XnjdcOFN9XC2p16R" Name="Input" Kind="StateInputPin" />
                       <Pin Id="Db7HkSKuFLhNtWBN9ByqgJ" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="-44,535,55,26" Id="EqU4tpeKO7YNe8GQusq82w">
-                      <p:NodeReference LastCategoryFullName="ICSharpCode.SharpZipLib.Tar.TarArchive" LastSymbolSource="ICSharpCode.SharpZipLib.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="Dispose" />
-                        <CategoryReference Kind="AssemblyCategory" Name="TarArchive" NeedsToBeDirectParent="true" />
-                      </p:NodeReference>
-                      <Pin Id="FCJC1fmxY4lQCXrjjJwNnS" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="AfhTKwVgMTtPFoLLo50Svr" Name="Output" Kind="StateOutputPin" />
-                    </Node>
                   </Patch>
                 </Node>
                 <Link Id="J1cqwPneKB7NhLe7Cy3iJ2" Ids="BTghiL667cmQJvK3a4wBbL,E8lHDOf2J7VMSWOlN8lNKU" IsHidden="true" />
@@ -131,10 +121,9 @@
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Link Id="RuTX0hJjUIvPDE7P0dWa8X" Ids="Db7HkSKuFLhNtWBN9ByqgJ,FCJC1fmxY4lQCXrjjJwNnS" />
               </Patch>
             </Node>
-            <Pad Id="VHelVB8Kjn9PC3miIVQrwq" Bounds="-119,6,181,40" ShowValueBox="true" isIOBox="true" Value="Need to come up with a way to stop its progress">
+            <Pad Id="VHelVB8Kjn9PC3miIVQrwq" Bounds="-119,-7,181,40" ShowValueBox="true" isIOBox="true" Value="Need to come up with a way to stop its progress">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -143,7 +132,7 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="Su8uElJzS0KP73Q9GScHhh" Bounds="-119,74,124,38" ShowValueBox="true" isIOBox="true" Value="Same goes for the download nodes">
+            <Pad Id="Su8uElJzS0KP73Q9GScHhh" Bounds="-119,62,124,38" ShowValueBox="true" isIOBox="true" Value="Same goes for the download nodes">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -152,7 +141,7 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="MM7Hwt64zsSOxSdJ7xmncC" Bounds="-119,141,214,57" ShowValueBox="true" isIOBox="true" Value="I think Cancellation tokens should help in this regard but I'm not yet sure how they should help">
+            <Pad Id="MM7Hwt64zsSOxSdJ7xmncC" Bounds="-119,120,214,57" ShowValueBox="true" isIOBox="true" Value="I think Cancellation tokens should help in this regard but I'm not yet sure how they should help">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -212,15 +201,6 @@
                       <Pin Id="JvOzr7NeQVvMSFE2RqQKmd" Name="Input" Kind="StateInputPin" />
                       <Pin Id="MdkNoBRm3dnNLfEJxEk7Ac" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="-362,506,47,22" Id="QnNqJmZMNJ8LLGE9rZ79aC">
-                      <p:NodeReference LastCategoryFullName="ICSharpCode.SharpZipLib.Tar.TarArchive" LastSymbolSource="ICSharpCode.SharpZipLib.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="Dispose" />
-                        <CategoryReference Kind="AssemblyCategory" Name="TarArchive" NeedsToBeDirectParent="true" />
-                      </p:NodeReference>
-                      <Pin Id="OCeZsEqdUVrN7FsgRm3lbk" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="R5rJlC2ydayO3abCqod9f4" Name="Output" Kind="StateOutputPin" />
-                    </Node>
                   </Patch>
                 </Node>
                 <Link Id="E2ixVzXfo9JOLubmYGlHzP" Ids="GO55obbifhLQHX7U927qQS,K0DWVo9g27VLzpUoZAQUzr" IsHidden="true" />
@@ -245,7 +225,6 @@
                 <Link Id="VWZbZ7V77bAL3CGtSb4Lnj" Ids="OlkSqD0SY6TOuSSiqsW7nI,MhkZGmmkYm2QXol81yWH39" />
                 <Link Id="Ed9GVaiodMIOvTbUGVB536" Ids="HHpp3vYPtlzMeo9yXr5gOr,JvOzr7NeQVvMSFE2RqQKmd" />
                 <Link Id="RzCigKsbauWLeAlhdICHV3" Ids="K0DWVo9g27VLzpUoZAQUzr,FOkN5ePCSpzNHRB2a8yZMp" />
-                <Link Id="FeKeg0lzBUsLkxtsTGrv0i" Ids="MdkNoBRm3dnNLfEJxEk7Ac,OCeZsEqdUVrN7FsgRm3lbk" />
               </Patch>
             </Node>
             <Node Bounds="488,156,52,22" Id="UJ1rBWvUeWpOyL6zIOQZiO">
@@ -326,11 +305,10 @@
                   <Pin Id="Ho8jbzrE0AKPcNJySSi6aT" Name="Destination" Kind="InputPin" />
                   <Pin Id="M0VcSbUJ3NvQXn4kZkW2jk" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Pad Id="MdtnNJtckdoLw6LjGpTco1" Comment="Output" Bounds="463,535,40,19" ShowValueBox="true" isIOBox="true" Value="False">
+                <Pad Id="MdtnNJtckdoLw6LjGpTco1" Comment="Output" Bounds="463,533,40,19" ShowValueBox="true" isIOBox="true" Value="False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
-                  <p:ValueBoxSettings />
                 </Pad>
                 <Node Bounds="450,488,45,26" Id="Rbenl6Y7x7ZPRZB8tR77pV">
                   <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
@@ -379,8 +357,8 @@
               <Pin Id="JcScrCQpaCkNoMCRrSHTUi" Name="Value" Kind="OutputPin" />
               <Pin Id="KBsqWkYnTPQNhTIeZpzFnt" Name="On Data" Kind="OutputPin" />
             </Node>
-            <Pad Id="JE4fxNWEeOELPGRdYqCoGv" Comment="On Data" Bounds="459,679,40,19" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="MR2reNmAw86OYTJ85WPVDq" Comment="" Bounds="568,140,40,19" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="JE4fxNWEeOELPGRdYqCoGv" Comment="On Data" Bounds="459,677,40,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="MR2reNmAw86OYTJ85WPVDq" Comment="" Bounds="568,138,40,19" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -402,7 +380,7 @@
             </Node>
             <ControlPoint Id="KyoF6JjpicqMh3L9GOmBjQ" Bounds="561,601" />
             <ControlPoint Id="Qso7PvqmEBnOrg6R4KBwYa" Bounds="626,408" />
-            <Pad Id="MK11AmnQ2waL3QjUrHVW7v" Comment="" Bounds="315,689,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="MK11AmnQ2waL3QjUrHVW7v" Comment="" Bounds="315,679,35,35" ShowValueBox="true" isIOBox="true" />
             <ControlPoint Id="EHTfQDCsMJJPp4SYVSvdW3" Bounds="628,364" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
@@ -475,5 +453,5 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="QaqAJM1lgcTN3UoYlppwFY" Location="../packages/SharpZipLib.1.1.0/lib/net45/ICSharpCode.SharpZipLib.dll" />
+  <PlatformDependency Id="SbNbUmxbnC3NXZblnuaaEK" Location="C:/Users/noobusdeer/AppData/Local/vvvv/gamma/nugets/ICSharpCode.SharpZipLib.dll.0.85.4.369/lib/net20/ICSharpCode.SharpZipLib.dll" />
 </Document>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0252-g8cce69ed60" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+<Document xmlns:p="property" Id="RTEzIsLDTWJLOffcOTIhw2" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.1.0" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.VLML.Demo.Utils" CanvasType="FullCategory">
@@ -78,7 +78,6 @@
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
-              <p:ValueBoxSettings />
             </Pad>
             <Node Bounds="272,447,207,267" Id="FrQ9rHI34ZsL0VRRbsAD4p">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -627,6 +626,7 @@
                       <Choice Kind="OperationCallFlag" Name="FromImage" />
                     </p:NodeReference>
                     <Pin Id="Hwfuyr5YEiGPfmCmNUMBUM" Name="Input" Kind="InputPin" />
+                    <Pin Id="AV6KlNxhUWAORT4fauJw3t" Name="Discard Higher Bits" Kind="InputPin" />
                     <Pin Id="VhtZdrEwlrpPF7iRdNXrLT" Name="Result" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="200,753,46,22" Id="GUYSWRJ1CUmNOyKthuOakH">
@@ -670,9 +670,12 @@
                     <Pin Id="U2P0PZecdE8QPyN4ZUzBIZ" Name="Color" Kind="InputPin" />
                     <Pin Id="L9Xw1DqxvOvLCqeY7IorAu" Name="Clear" Kind="InputPin" />
                     <Pin Id="OWlknaA1C7XO0Jib4MUVxE" Name="Space" Kind="InputPin" />
+                    <Pin Id="Dpfsb83znfPOVUvORaUv5U" Name="Show Cursor" Kind="InputPin" />
+                    <Pin Id="OvUVDaZCIwFOCP9A2TElm1" Name="VSync" Kind="InputPin" />
                     <Pin Id="BadXIhhgBgMNeJ7nFeyOz5" Name="Enabled" Kind="InputPin" />
                     <Pin Id="LrTHcQbIaD1Nk91nzM0mhL" Name="Form" Kind="OutputPin" />
                     <Pin Id="D0IBTyKPqGFNYodcCUZ0Me" Name="ClientBounds" Kind="OutputPin" />
+                    <Pin Id="C1xiXxJ8nN1QclegKE3R8d" Name="Render Time" Kind="OutputPin" />
                   </Node>
                   <Pad Id="HYyH1MZpcJdMmPi4FVsD2G" Comment="Size" Bounds="305,792,45,38" ShowValueBox="true" isIOBox="true" Value="2, 2">
                     <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
@@ -692,6 +695,7 @@
                     <Pin Id="Nr8rPi6pRXhLzRoWeFBIsT" Name="Paint" Kind="InputPin" />
                     <Pin Id="IKLfa696r5KOBXmdvqFRqA" Name="Enabled" Kind="InputPin" />
                     <Pin Id="KlvkkWqxXW8NHCzHEOzq9U" Name="Output" Kind="OutputPin" />
+                    <Pin Id="AMiKjduyzU2PiQvM4wmewS" Name="Baseline Position" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="889,521,48,13" Id="MOFURP8rzf4MqaBN9QGkbu">
                     <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
@@ -839,6 +843,7 @@
                     <Pin Id="MLKimhKw7P7L6FJWIyZWd1" Name="Paint" Kind="InputPin" />
                     <Pin Id="V7HmuUNaSYxM5CaFXDRpB4" Name="Enabled" Kind="InputPin" />
                     <Pin Id="FyLDGJsrn3ZP4VOjT5P9qr" Name="Output" Kind="OutputPin" />
+                    <Pin Id="Du0xO3KlvQPNbwijfKVht2" Name="Baseline Position" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="632,844,105,13" Id="GZLgaZZyqZ0P5XJFhC0PtM">
                     <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastSymbolSource="VL.Skia.vl">
@@ -861,6 +866,7 @@
                     <Pin Id="Rjg0dS7lV3ZPrQWSs42OgZ" Name="Paint" Kind="InputPin" />
                     <Pin Id="CU3TK32SvGoLMH64dts4Vv" Name="Enabled" Kind="InputPin" />
                     <Pin Id="RpHX9HwqTm1NdPj5TnDre8" Name="Output" Kind="OutputPin" />
+                    <Pin Id="PzDdFlXhkVYOYoQrAE8lrJ" Name="Baseline Position" Kind="OutputPin" />
                   </Node>
                   <ControlPoint Id="Jf0twgLhoa5Os8S4SZf7ds" Bounds="754,739" />
                   <Node Bounds="751,778,49,22" Id="C3NFt8UIzRWMgpcW3q6wVd">
@@ -1211,8 +1217,8 @@
     </Node>
   </Patch>
   <DocumentDependency Id="NnRkQ6OsFxVPTEB3Y72JX9" Location="./VVVV.VLML.Demos.Utils.MNISTUnzip.vl" />
-  <NugetDependency Id="NYeBGGQi2mNLBZ3bItCsmZ" Location="VL.Skia" Version="0.93.26-g6c67991fa4" />
+  <NugetDependency Id="NYeBGGQi2mNLBZ3bItCsmZ" Location="VL.Skia" Version="2020.1.0" />
   <DocumentDependency Id="QYJ0EgHMIdRPUJFjmshbfH" Location="../../../../Downloader/Download.vl" />
-  <NugetDependency Id="V1XMxuYrCKqPzUddfzUY6d" Location="VLML" Version="0.1.27" />
+  <NugetDependency Id="V1XMxuYrCKqPzUddfzUY6d" Location="VLML" Version="0.1.45" />
   <PlatformDependency Id="ENRFrKH4NekLaSE4mGKuxO" Location="System.Windows.Forms" />
 </Document>

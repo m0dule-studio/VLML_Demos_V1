@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0234-gaf501e9cf3" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+<Document xmlns:p="property" Id="SWXaRg4NzZZMWwAjW3FquC" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.1.0" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.VLML.Demos.Utils" CanvasType="FullCategory">
@@ -342,7 +342,6 @@
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
-                  <p:ValueBoxSettings />
                 </Pad>
                 <Link Id="F3QW7wd5fEQOt0CccImLWZ" Ids="PErM0WrbWYMMd5CYRnljvb,CiJ6djrrAtoLtkHaVWTVM7" />
                 <Node Bounds="2303,319,49,86" Id="J9ch2gDcFgiPOnDnfxt2Wa">
@@ -784,7 +783,6 @@
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="String" />
                     </p:TypeAnnotation>
-                    <p:ValueBoxSettings />
                   </Pad>
                   <Node Bounds="374,-62,82,230" Id="Pouetq53Xx5OGDQhfb1Ko8">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -817,16 +815,16 @@
                       <Node Bounds="400,106,45,13" Id="IMExDLLY3GqLAzzwxbYNvW">
                         <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="Switch" />
-                          <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                          <FullNameCategoryReference ID="Control" />
                         </p:NodeReference>
                         <Pin Id="M4IByVkc8CUPQcRsKgP8tD" Name="Condition" Kind="InputPin" />
-                        <Pin Id="ObI96QJZGecLGbrOOMCQr2" Name="False" Kind="InputPin" DefaultValue="Ok">
+                        <Pin Id="ObI96QJZGecLGbrOOMCQr2" Name="Input" Kind="InputPin" DefaultValue="Ok">
                           <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                             <Choice Kind="TypeFlag" Name="String" />
                           </p:TypeAnnotation>
                         </Pin>
-                        <Pin Id="PX4sOoeqKxtOd5yntaqH3p" Name="True" Kind="InputPin" />
+                        <Pin Id="PX4sOoeqKxtOd5yntaqH3p" Name="Input 2" Kind="InputPin" />
                         <Pin Id="RqiDCF68BhlNSTNdGv6pat" Name="Output" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="388,-24,44,22" Id="MLMMe7C30YaMICvIWsE3xP">
@@ -1069,16 +1067,16 @@
                       <Node Bounds="388,133,45,13" Id="CeCINB0txrgNHyV5JlGd2O">
                         <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="Switch" />
-                          <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                          <FullNameCategoryReference ID="Control" />
                         </p:NodeReference>
                         <Pin Id="R5wkrl827JELSeWreSsqIH" Name="Condition" Kind="InputPin" />
-                        <Pin Id="D1C1lPv0M5YMhCxt8AzRVG" Name="False" Kind="InputPin" DefaultValue="Ok">
+                        <Pin Id="D1C1lPv0M5YMhCxt8AzRVG" Name="Input" Kind="InputPin" DefaultValue="Ok">
                           <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                             <Choice Kind="TypeFlag" Name="String" />
                           </p:TypeAnnotation>
                         </Pin>
-                        <Pin Id="Miq8zMTC8pDM6W7VIF6dBz" Name="True" Kind="InputPin" />
+                        <Pin Id="Miq8zMTC8pDM6W7VIF6dBz" Name="Input 2" Kind="InputPin" />
                         <Pin Id="JU8WZBiwCzmMsPElYV7tYx" Name="Output" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="376,-1,44,22" Id="ADGNzxuLsxOMqwNjO9QfIR">
@@ -1282,11 +1280,6 @@
         <Canvas Id="MJhlkYrIQM0LvnkNN2cjFl" BordersChecked="false" CanvasType="Group" />
         <Patch Id="KXzH5bmo4o0QZFsTPCKNX7" Name="Create" />
         <Patch Id="TXnX3eNpF2fPPrXj3iaVQs" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="MvDmS27zadINLR8P06mgWi">
           <Fragment Id="Lwaen07cM1rMCtAMft9q9K" Patch="KXzH5bmo4o0QZFsTPCKNX7" Enabled="true" />
           <Fragment Id="PYyw7SgnX0HNqYdjR8RK64" Patch="TXnX3eNpF2fPPrXj3iaVQs" Enabled="true" />

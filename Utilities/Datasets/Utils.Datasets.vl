@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="N6sVeHIi7X8PYPdx1dxMLw" LanguageVersion="2019.1.0-0252-g8cce69ed60" Version="0.128">
+<Document xmlns:p="property" Id="N6sVeHIi7X8PYPdx1dxMLw" LanguageVersion="2020.1.0.53" Version="0.128">
   <Patch Id="StSof9jGhGsLKpxyTGypNe">
     <Canvas Id="L6NGMQhKZVIOLgf39vhmMT" DefaultCategory="Dataset" CanvasType="FullCategory">
       <Canvas Id="BLucl6fb0JwPGEDJUxHdLc" Name="Image" Position="241,211">
@@ -397,8 +397,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RaOthpSJBPiMDJBJbqoi8a" Location="VL.Core" Version="0.94.50-gf563f1b382" />
-  <NugetDependency Id="O3syQejkwE6LNYEa2IJK2c" Location="VL.CoreLib" Version="0.94.50-gf563f1b382" />
+  <NugetDependency Id="RaOthpSJBPiMDJBJbqoi8a" Location="VL.Core" Version="2020.1.0" />
+  <NugetDependency Id="O3syQejkwE6LNYEa2IJK2c" Location="VL.CoreLib" Version="2020.1.0" />
   <NugetDependency Id="ASIPJ5vRqOuNByACicKsFU" Location="VL.CoreLib.VVVV" Version="0.94.50-gf563f1b382" />
   <DocumentDependency Id="O0AyMayvV30O4Aock6vINY" Location="./Images/Flowers/DataSet.Flowers.vl" />
   <DocumentDependency Id="KLHgUM9dlJaMUNHSjx8Lem" Location="./Images/MNIST/vl/VVVV.VLML.Demo.Utils.MNISTSetup.vl" />
