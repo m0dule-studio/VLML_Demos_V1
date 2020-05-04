@@ -18,7 +18,11 @@ namespace ModelEnums
         }
 
         //this method needs to be imported in VL to set the default
-        public static ModelPick CreateDefault() => CreateDefaultBase("No Model Found");
+        public static ModelPick CreateDefault() // => CreateDefaultBase("No Model Found");
+        {
+            return CreateDefaultBase();
+        }
+        
         //{
         //    //use method of base class if nothing special required
         //    return ModelPick CreateDefaultBase() 
